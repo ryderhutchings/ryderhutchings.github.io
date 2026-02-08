@@ -1,0 +1,12 @@
+baseURL = "https://ryderhutchings.github.io/"
+languageCode = "en"
+title = "Ryder Hutchings"
+theme = "blowfish"
+
+paginate = 0
+disableKinds = ["taxonomy", "term", "RSS"]
+
+[params]
+description = "Personal site"
+defaultAppearance = "dark"
+autoSwitchAppearance = true
