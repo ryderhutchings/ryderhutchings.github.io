@@ -1,0 +1,103 @@
+{{ define "main" }}
+<h1 class="text-4xl font-bold mb-6 text-gray-900 dark:text-gray-100 mt-12">Contact</h1>
+
+
+<div class="contact-form">
+  <style>
+    /* Scoped form styles */
+    .contact-form input,
+    .contact-form textarea {
+      background-color: white;
+      color: black;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+      padding: 0.75rem;
+      width: 100%;
+      font-size: 1rem;
+      outline: none;
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+      color: #888;
+    }
+
+    .contact-form label {
+      margin-top: 1rem;
+      display: block;
+      font-weight: 600;
+    }
+
+    .contact-form button {
+      margin-top: 1rem;
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+      font-weight: 700;
+      cursor: pointer;
+      width: 100%;
+      border: none;
+      background-color: #9ca3af; /* default light */
+      color: black;
+      transition: background-color 0.2s, color 0.2s;
+    }
+
+    /* Dark mode styles */
+    @media (prefers-color-scheme: dark) {
+      .contact-form input,
+      .contact-form textarea {
+        background-color: #6B7280;
+        color: white;
+        border: 1px solid #6B7280;
+      }
+
+      .contact-form input::placeholder,
+      .contact-form textarea::placeholder {
+        color: #9ca3af;
+      }
+
+      .contact-form button {
+        background-color: #6B7280;
+        color: white;
+      }
+    }
+  </style>
+
+  <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col max-w-lg mx-auto">
+    <input type="hidden" name="access_key" value="29dbcce8-b4ae-4e79-914b-c095ad09463d">
+    <input type="hidden" name="form_name" value="ryderhutchings.com">
+    <input type="hidden" name="redirect" value="">
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" placeholder="Your message here…" required></textarea>
+
+    <button type="submit" id="submit-button">Send Message</button>
+  </form>
+
+  <script>
+    // Only target the contact form button
+    const btn = document.querySelector('.contact-form #submit-button');
+
+    const setButtonColors = () => {
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        btn.style.backgroundColor = '#6B7280';
+        btn.style.color = 'white';
+      } else {
+        btn.style.backgroundColor = '#9ca3af';
+        btn.style.color = 'black';
+      }
+    };
+
+    // Apply colors on load
+    setButtonColors();
+
+    // Listen for theme changes dynamically
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', setButtonColors);
+  </script>
+</div>
+{{ end }}
