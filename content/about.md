@@ -1,10 +1,17 @@
+---
+draft: false
+summary: "This is my about me post on my website"
+showPagination: false
+hidden: true
+---
+
 <h1 class="text-4xl font-bold mb-6 text-gray-900 dark:text-gray-100">About Me</h1>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-pV7B+...yourhash..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <img src="../assets/icon.png" alt="Photo of Ryder" width="125">
 
-> [!IMPORTANT] 
+> [!NOTE] 
 > Starting in February 2026, I am starting my own business around my social media channels. Thanks for sticking with me as my content keeps changing and improving!
 
 Hey, I’m Ryder! I’m a small content creator and buinsess owner who reviews technology, shares tutorials, and creates videos about hobbies.
