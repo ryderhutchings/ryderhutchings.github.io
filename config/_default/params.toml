@@ -21,8 +21,8 @@ mainSections = ["articles", "videos", "collaborations"]
 # robots = ""
 favicon = "favicon.ico"
 
-disableImageOptimization = false
-disableImageOptimizationMD = false
+disableImageOptimization = true
+disableImageOptimizationMD = true
 disableTextInHeader = false
 # backgroundImageWidth = 1200
 
