@@ -23,7 +23,7 @@ Posted on YouTube: [https://youtu.be/3jVCxhk8e1A](https://youtu.be/3jVCxhk8e1A)
 | Tool      | Account Required | Price           | Available Platforms         | Emergency Unblock | My Rating |
 |:---------:|:----------------:|:---------------:|:---------------------------:|:----------------:|:--------:|
 | Brick     | ✅               | $59             | iOS / Android              | Yes               | 4 / 5 <span class="fa fa-star checked"></span> |
-| PauseBox  | ❌               | $24.95          | iOS (Android coming soon)  | Yes               | 4 / 5 <span class="fa fa-star checked"></span> |
+| PauseBox  | ❌               | $24.95          | iOS (Android coming soon)  | Yes               | 5 / 5 <span class="fa fa-star checked"></span> |
 | Locked    | ✅               | $44             | iOS                        | Yes               | 5 / 5 <span class="fa fa-star checked"></span> |
 | Unpluq    | ✅               | $79.00/year     | iOS / Android              | Yes               | 4 / 5 <span class="fa fa-star checked"></span> |
 | Bloom     | ✅               | $39             | iOS / Android              | Yes               | 3 / 5 <span class="fa fa-star checked"></span> |
@@ -56,7 +56,7 @@ Posted on YouTube: [https://youtu.be/3jVCxhk8e1A](https://youtu.be/3jVCxhk8e1A)
 ---
 
 ## <span style="color:black;"><strong>Brick</strong></span>
-**Price:** <span style="color:red;">$59</span> <br>
+**Price:** <span style="color:orange;">$59</span> <br>
 **Account Required:** Yes <br>
 **Available Platforms (iOS / Android):**  Both <br>
 **Website:** [https://getbrick.com/](https://getbrick.com/) <br>
@@ -88,7 +88,7 @@ Posted on YouTube: [https://youtu.be/3jVCxhk8e1A](https://youtu.be/3jVCxhk8e1A)
 - Premium-looking and feeling device.
 - Clean, intuitive, and easy-to-use app UI (extremely user friendly).
 - Selective app blocking (block only what you want).
-- Emergency unblock option if needed.
+- Emergency unblock/unlock option available if needed.
 - Works on both iOS and Android.
 - Works offline, no internet required.
 - The app is constantly being updated and new features added.
@@ -124,7 +124,9 @@ Rating:
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star"></span> <br>
 
-I think Brick is an interesting company, and the idea behind the product is solid. After using Brick for some time now, I would definitely recommend it to a friend. However, the price is kind of steep, and it's hard to justify spending $59 USD on something that likely costs only a dollar or two to make if you consider that the main components are an injection-molded shell, an NFC tag/sticker, a magnet, and a rubber bottom—all of which could probably be assembled for around $5 (which is likely a generous estimate on my end, considering Brick the product is probably made in bulk to reduce manufacturing costs for the company).  
+I think Brick is an interesting company, and the idea behind the product is solid. After using Brick for some time now, I would definitely recommend it to a friend. However, the price is kind of steep, It's hard to justify spending $59 USD on something that likely costs only a dollar or two to make, considering the components are probably just an injection-molded shell, an NFC sticker, a magnet, and a rubber bottom, all of which could likely be assembled for around $5.(which is likely a generous estimate, considering Brick is probably made in bulk to reduce manufacturing costs).  
+
+At the end of the day, from a business perspective, you’ve got to make your money somehow—just be glad Brick is not a subscription.
 
 ![alt text](media/brick_timeOn.jpg)
 
@@ -142,14 +144,14 @@ I think what you are really paying for with the $59 USD is the software: the app
 **Price:** <span style="color:green;">$24.95</span><br>
 **Available Platforms (iOS / Android):** iOS (Android support coming soon) <br>
 **Website:** [https://getpausebox.com/](https://getpausebox.com/) <br>
-**Physical Device Needed:** You do NOT need the PauseBox or PauseTag to start blocking (you can enable Pause Mode without them in Settings) or to unlock using emergency shutoffs, but the app works best if you purchase a PauseBox/PauseTag. <br>
+**Physical Device Needed:** You do NOT need the PauseBox or PauseTag to start blocking (you can enable Pause Mode without them in Settings) or to unlock using the *Emergency Shut Off* feature, but the app works best if you purchase a PauseBox/PauseTag. <br>
 <div style="display:flex; gap:10px;">
   <img src="media/IMG_1003.jpg" width="50%">
   <img src="media/IMG_1004.jpg" width="50%">
 </div>
 
 **Emergency Unblock / Unlocks**
-- Available: Infinite (To the best of my knowledge, I’ve used emergency shutoffs several times and haven’t found any signs of a limit. I think that typing all of the text out is punishment enough.)
+- Available: Infinite (To the best of my knowledge, I’ve used *Emergency Shut Off* several times and haven’t found any signs of a limit. I think that typing all of the text out is punishment enough.)
 ![PauseBox](media/pausebox_shutoff.gif)
 
 ### How It Works
@@ -159,11 +161,30 @@ I think what you are really paying for with the $59 USD is the software: the app
 
 - To toggle **Pause Session ON / OFF** → Tap the **PauseBox logo** in the app, then **tap your phone to the PauseBox device (PauseBox or PauseTag)** to turn Pause Session on or off.
 
+<div style="display:flex; gap:10px; flex-wrap:wrap;">
+  <img src="media/turnOnpausebox.gif" style="height:600px; object-fit:contain;">
+  <img src="media/pausebox_modeOn.jpg" style="height:600px; object-fit:contain;">
+  <div style="width:100%;">
+    <img src="media/brick_apps_off.jpg" style="height:auto; object-fit:contain; display:block; margin:0 auto;">
+  </div>
+</div>
+
 ### Pros
--  TODO
+- Affordable the PauseBox only costs ~~$34.95 USD~~ $24.95 USD! <br> And PauseTag ~~$19.99 USD~~ $14.99 USD (both are currently on sale as of this writing).
+- Physical device to enforce app limits and screen time (no one-click workarounds).  
+- Intuitive and easy-to-use app UI (very user-friendly).  
+- Selective app blocking, including websites (block only what you want).  
+- Emergency unblock/unlock option available if needed.  
+- Emergency unblock/unlocks requires some effort to maintain friction; you can’t easily bypass the control you’ve put in place.  
+- Works offline, and no account creation is required during setup.  
+- PauseBox does not collect any data from you.  
+- The app is constantly updated with new features.  
+- PauseBox / PauseTag is available for a one-time cost, providing lifetime access after purchase.  
+- When you buy a PauseBox or PauseTag, you not only get a useful tool but also support a small business.
 
 ### Cons
--  TODO
+- Emergency unblock/unlock method (called “Emergency Shut Off” in the app) can be both a pro and a con, as it intentionally adds significant friction. That is a pro in my opinion, but it can also be a con to some users.
+- 3D-printed exterior: PauseBox is a new startup, so the PauseBox/PauseTag is 3D printed. At first, I didn't like it, but its simplicity has grown on me. The product could still use some refining and updates (so this isn't necessarily a con, it's just something to be aware of).
 
 <!DOCTYPE html>
 <html>
@@ -184,8 +205,22 @@ Rating:
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
-<span class="fa fa-star"></span> <br>
-Instert what I think here... TODO
+<span class="fa fa-star checked"></span>
+
+I think PauseBox is an awesome little startup that doesn’t get the attention it deserves and is an underdog in a market full of potential. For anyone reading this who is wondering if I have a little bias toward PauseBox, I do… but hey, they use a salmon/pink color in the app, which I really like (I like pink along with purple, shades of blue, shades of green, and shades of gray), and they also have multiple variations of the same core product (PauseBox and PauseTag). This is convenient if you travel a lot—the PauseTag is useful because you can stick it with your car keys or another keychain and still have all the functionality of the PauseBox (and the same functionality as Brick but for less). The PauseBox itself is nice because you can stick it on your fridge or something, because it has a magnet on the back. PauseBox is unique in its own right.
+
+I think PauseBox still has a long way to go in terms of product development. I have nothing strictly speaking against 3D-printed products; they’re good for early business and prototyping, but I think a safer long-term solution like injection molding would entice more consumers and get PauseBox more business.
+
+
+On a completely unrelated side note, when I first put my PauseBox on my fridge, I later went to take it off and just stared blankly at this:
+<div style="display: flex; gap: 5px;">
+  <img src="media/pausebox_1.jpg" alt="Image 1" style="width: 23%;">
+  <img src="media/pausebox_3.jpg" alt="Image 2" style="width: 23%;">
+  <img src="media/pausebox_2.jpg" alt="Image 3" style="width: 23%;">
+  <img src="media/pausebox_4.jpg" alt="Image 4" style="width: 23%;">
+</div>
+After the initial shock of it breaking, I simply found it funny. With little effort, I fixed it, and the two parts just clicked back together.
+
 </body>
 </html>
   
