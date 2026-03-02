@@ -5,7 +5,7 @@ date: 2026-02-26
 draft: true
 summary: "This is my first post on my site"
 tags: ["Technology", "NFC", "Reviews"]
-showTableOfContents: true
+showTableOfContents: false
 ---
 ![alt text](featured.jpg)
 
