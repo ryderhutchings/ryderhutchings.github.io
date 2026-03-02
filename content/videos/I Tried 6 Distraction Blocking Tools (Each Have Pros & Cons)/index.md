@@ -2,11 +2,12 @@
 hide_from_recent: true
 title: "I Tried 6 Distraction Blocking Tools (Each Have Pros & Cons)"
 date: 2026-02-26
-draft: false
+draft: true
 summary: "This is my first post on my site"
 tags: ["Technology", "NFC", "Reviews"]
 showTableOfContents: false
 ---
+
 ![alt text](featured.jpg)
 
 In this video I go over Brick, Bloom, Unpluq, PauseBox, Locked and Foqos and talk about a feature from each I like.
