@@ -2,7 +2,7 @@
 hide_from_recent: false
 title: "I Tried 6 Distraction Blocking Tools (Each Have Pros & Cons)"
 date: 2026-02-26
-draft: false
+draft: true
 summary: "This is my first post on my site"
 tags: ["Technology", "NFC", "Reviews"]
 showTableOfContents: true
