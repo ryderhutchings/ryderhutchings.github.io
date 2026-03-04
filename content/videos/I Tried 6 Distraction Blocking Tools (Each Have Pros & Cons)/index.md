@@ -26,7 +26,7 @@ Posted on YouTube: [https://youtu.be/3jVCxhk8e1A](https://youtu.be/3jVCxhk8e1A)
 | Brick     | ✅               | $59             | iOS / Android              | Yes               | 4 / 5 <span class="fa fa-star checked"></span> |
 | PauseBox  | ❌               | $24.95          | iOS (Android coming soon)  | Yes               | 5 / 5 <span class="fa fa-star checked"></span> |
 | Locked    | ✅               | $44             | iOS                        | Yes               | 5 / 5 <span class="fa fa-star checked"></span> |
-| Unpluq    | ✅               | $79.00/year     | iOS / Android              | Yes               | 4 / 5 <span class="fa fa-star checked"></span> |
+| Unpluq    | ✅               | $66/yr     | iOS / Android              | Yes               | 4 / 5 <span class="fa fa-star checked"></span> |
 | Bloom     | ✅               | $39             | iOS / Android              | Yes               | 3 / 5 <span class="fa fa-star checked"></span> |
 | Foqos     | ❌               | Free            | iOS                        | Yes               | 3 / 5 <span class="fa fa-star checked"></span> |
 
@@ -57,8 +57,8 @@ Posted on YouTube: [https://youtu.be/3jVCxhk8e1A](https://youtu.be/3jVCxhk8e1A)
 ---
 
 ## <span style="color:black;"><strong>Brick</strong></span>
-**Price:** <span style="color:orange;">$59</span> <br>
 **Account Required:** Yes <br>
+**Price:** <span style="color:orange;">$59</span> <br>
 **Available Platforms (iOS / Android):**  Both <br>
 **Website:** [https://getbrick.com/](https://getbrick.com/) <br>
 **Physical Device Needed:** You do NOT need the Brick to start blocking or to unbrick using emergency unbricks (to start blocking without physically having the Brick, press and hold the Brick logo for 3 seconds in the app), but the app still requires purchasing the Brick. <br>
@@ -97,7 +97,8 @@ Posted on YouTube: [https://youtu.be/3jVCxhk8e1A](https://youtu.be/3jVCxhk8e1A)
 
 ### Cons
 - You must have the physical Brick to unlock your phone. If you’re away from it, you cannot access your apps without using limited emergency unlocks. These can be reset, but the process takes time (see: https://getbrick.com/pages/emergency-unbricks).  
-- $59 price for the device.  
+- $59 price for the device.
+![Brick](media/brick_price.png)
 - Requires creating an account, and some data is collected*, including:  
   - Identifiers, such as your name and email address  
   - Contact information, such as your phone number  
@@ -172,6 +173,7 @@ I think what you are really paying for with the $59 USD is the software: the app
 
 ### Pros
 - Affordable the PauseBox only costs ~~$34.95 USD~~ $24.95 USD! <br> And PauseTag ~~$19.99 USD~~ $14.99 USD (both are currently on sale as of this writing).
+![PauseBox](media/pausebox_price.png)
 - Physical device to enforce app limits and screen time (no one-click workarounds).  
 - Intuitive and easy-to-use app UI (very user-friendly).  
 - Selective app blocking, including websites (block only what you want).  
@@ -228,27 +230,61 @@ After the initial shock of it breaking, I simply found it funny. With little eff
 
 ---
 
-## Unpluq
-**Account Required:**  
-**Price:**  
-**Available Platforms (iOS / Android):**  
-**Physical Device Needed:**  
+## <span style="color:black;"><strong>Unpluq</strong></span>
+**Account Required:** Yes (Google, Apple, or Email/Password). <br>
+**Price:** <span style="color:red;">$79.00 (includes 1 Year Unpluq Premium + Unpluq Tag; $66 per year after)</span><br>
+**Available Platforms (iOS / Android):** Both <br>
+**Website:** [https://www.unpluq.com/](https://www.unpluq.com/) <br>
+**Physical Device Needed:** No (the PauseTag is optional; you can unblock/unlock apps by tapping your phone to it, similar to using PauseBox or Brick. However, the app also lets you unblock/unlock via QR code, scrolling, shaking the phone, or by tapping a pattern). <br>
+
+<div style="display:flex; gap:10px; flex-wrap:nowrap;">
+  <img src="media/unpluq_op.jpg" style="height:420px; object-fit:contain;">
+  <img src="media/unpluq_tag2.jpg" style="height:420px; object-fit:contain;">
+</div>
 
 **Emergency Unblock**
-- Available:  
-- Method:  
+- Available: Yes, you get one 5-minute emergency break per day. During this time, you can disable the blocking schedule, and all apps work normally. 
+![Unpluq](media/unpluq_unlock.gif)
+
 
 ### How It Works
--  
+- **When you start a Blocking Schedule, Blocking Mode is enabled immediately.**
+Nothing else is required to begin blocking. No physical device interaction is needed. Simply turning the schedule on activates blocking the apps you have selected to block.
+
+- **In Schedules, create or enable your Blocking Schedule**
+If the toggle box is **grey**, the schedule is **OFF** and all apps work normally.
+If the toggle box is **yellow**, the schedule is **ON** and your selected apps will be blocked.
+
+<div style="display:flex; gap:10px; flex-wrap:wrap;">
+  <img src="media/unpluq_lock.gif" style="height:600px; object-fit:contain;">
+  <img src="media/upluq_locked.jpg" style="height:600px; object-fit:contain;">
+  <div style="width:100%;">
+    <img src="media/brick_apps_off.jpg" style="height:auto; object-fit:contain; display:block; margin:0 auto;">
+  </div>
+</div> 
 
 ### Pros
--  A
--  B
+- Physical device available to enforce app limits and screen time with no simple one-click workarounds.
+- Multiple unblocking "Distraction Barriers" available, so a hardware purchase is not required. An optional Unpluq-branded NFC device called the "Unpluq Tag" is also available for purchase.
+- Clean, intuitive, and easy-to-use app UI (user interface).
+- Selective app blocking so you can block only the apps you choose.
+- Emergency unblock option available when needed.
+- Works on both iOS and Android.
+- Frequently updated with new features and improvements.
 
 ### Cons
--  A
--  B
--  C
+- Unpluq requires a subscription, which you can purchase for 6 months, 1 year, or 3 years. There is no one-time purchase or lifetime access option.
+![Unpluq](media/unpluq_price.jpg)
+- The app UI, while user-friendly in some respects, I find extremely confusing and cluttered. (Unpluq, please consider merging the Home page with the Schedules page).  
+- Pricing: I understand that businesses need to generate revenue, but Unpluq operates on a subscription-based model, which I personally do not like. Paying $66.00 per year for a mobile app, especially in this day and age, is absurd.
+![Unpluq](media/unpluq_cost.jpg)
+- Unpluq requires an account and collects personal information and app data.* (See: https://www.unpluq.com/pages/privacy).  
+*The app provides more detailed information about optional data collection than the website.
+
+<div style="display:flex; gap:10px; flex-wrap:wrap;">
+  <img src="media/unpluq_info1.jpg" style="width:48%; object-fit:contain;">
+  <img src="media/unpluq_info2.jpg" style="width:48%; object-fit:contain;">
+</div>
 
 <!DOCTYPE html>
 <html>
@@ -424,5 +460,6 @@ Insert what I think here...
 
 ---
 
-## Final Thoughts
+## Final Thoughts (To be moved up top to TL;DR)
 
+A con that I want to be 100% clear is across the board for almost all of these products is they guilt trip you with "facts" that they don't sight where they got that imformatiom from with info suctsh as "you will spend an average of 4 years of your life doomscrolling"
