@@ -1,5 +1,5 @@
 ---
-hide_from_recent: false
+hide_from_recent: true
 title: "I Tried 6 Distraction Blocking Tools (Each Have Pros & Cons)"
 date: 2026-02-26
 draft: false
