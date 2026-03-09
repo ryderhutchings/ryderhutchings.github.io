@@ -9,11 +9,14 @@ showTableOfContents: true
 ---
 
 ![alt text](featured.jpg)
-
-In this video I go over Brick, Bloom, Unpluq, PauseBox, Locked and Foqos and talk about a feature from each I like.
-
 Posted on YouTube: [https://youtu.be/3jVCxhk8e1A](https://youtu.be/3jVCxhk8e1A)
+# TL;DR
 
+For many of you, this article might be somewhat overstimulating and hard to read because I may have added too much fluff (and by that I mean there are a lot of images and GIFs). But the takeaway consensus I want you to have is that I believe everyone should have some sort of device like this to help with screen time.
+
+**Disclosure:** Some of the following products were provided for the purpose of this video and review; however, all thoughts and opinions are my own, and no money was exchanged during the making of this video.
+
+---
 <style>
 .checked {
   color: orange;
@@ -25,45 +28,27 @@ Posted on YouTube: [https://youtu.be/3jVCxhk8e1A](https://youtu.be/3jVCxhk8e1A)
 |:---------:|:----------------:|:---------------:|:---------------------------:|:----------------:|:--------:|
 | Brick     | ✅               | $59             | iOS / Android              | Yes               | 4 / 5 <span class="fa fa-star checked"></span> |
 | PauseBox  | ❌               | $24.95          | iOS (Android coming soon)  | Yes               | 5 / 5 <span class="fa fa-star checked"></span> |
-| Locked    | ✅               | $44             | iOS                        | Yes               | 5 / 5 <span class="fa fa-star checked"></span> |
-| Unpluq    | ✅               | $66/yr     | iOS / Android              | Yes               | 4 / 5 <span class="fa fa-star checked"></span> |
+| Locked    | ❌               | $44             | iOS                        | Yes               | 5 / 5 <span class="fa fa-star checked"></span> |
+| Unpluq    | ✅               | $66/yr     | iOS / Android              | Yes               | 3 / 5 <span class="fa fa-star checked"></span> |
 | Bloom     | ✅               | $39             | iOS / Android              | Yes               | 3 / 5 <span class="fa fa-star checked"></span> |
-| Foqos     | ❌               | Free            | iOS                        | Yes               | 3 / 5 <span class="fa fa-star checked"></span> |
+| Foqos     | ❌               | Free            | iOS                        | Yes               | 4 / 5 <span class="fa fa-star checked"></span> |
 
 ---
+<!--
 <span style="color:red;">Red</span> <br>
 <span style="color:green;">Green</span> <br>
 <span style="color:orange;">Orange</span> <br>
+-->
 
-<span style="color:red;"><strong>Important</strong></span>
-<span style="color:orange;"><strong>Important</strong></span>
-<span style="color:gold;"><strong>Important</strong></span>
-<span style="color:yellow;"><strong>Important</strong></span>
-<span style="color:green;"><strong>Important</strong></span>
-<span style="color:lime;"><strong>Important</strong></span>
-<span style="color:teal;"><strong>Important</strong></span>
-<span style="color:cyan;"><strong>Important</strong></span>
-<span style="color:blue;"><strong>Important</strong></span>
-<span style="color:navy;"><strong>Important</strong></span>
-<span style="color:purple;"><strong>Important</strong></span>
-<span style="color:violet;"><strong>Important</strong></span>
-<span style="color:magenta;"><strong>Important</strong></span>
-<span style="color:pink;"><strong>Important</strong></span>
-<span style="color:brown;"><strong>Important</strong></span>
-<span style="color:gray;"><strong>Important</strong></span>
-<span style="color:black;"><strong>Important</strong></span>
-<span style="color:white;"><strong>Important</strong></span>
 
----
-
-## <span style="color:black;"><strong>Brick</strong></span>
+## Brick
 **Account Required:** Yes <br>
-**Price:** <span style="color:orange;">$59</span> <br>
+**Price:** <span style="color:red;">$59</span> <br>
 **Available Platforms (iOS / Android):**  Both <br>
 **Website:** [https://getbrick.com/](https://getbrick.com/) <br>
-**Physical Device Needed:** You do NOT need the Brick to start blocking or to unbrick using emergency unbricks (to start blocking without physically having the Brick, press and hold the Brick logo for 3 seconds in the app), but the app still requires purchasing the Brick. <br>
+**Physical Device Needed:** Yes <br>
 
-![alt text](media/brick_img.jpg)
+![Brick](media/brick_img.jpg)
 
 **Emergency Unblock / Unlocks**
 - Available: Yes, you get 5 emergency unbricks/unblocks, which can be reset by contacting support (see: https://getbrick.com/pages/emergency-unbricks).
@@ -141,12 +126,12 @@ I think what you are really paying for with the $59 USD is the software: the app
 ---
 
 
-## <span style="color:black;"><strong>PauseBox</strong></span>
+## PauseBox
 **Account Required:** No (all data is stored locally). <br>
 **Price:** <span style="color:green;">$24.95</span><br>
 **Available Platforms (iOS / Android):** iOS (Android support coming soon) <br>
 **Website:** [https://getpausebox.com/](https://getpausebox.com/) <br>
-**Physical Device Needed:** You do NOT need the PauseBox or PauseTag to start blocking (you can enable Pause Mode without them in Settings) or to unlock using the *Emergency Shut Off* feature, but the app works best if you purchase a PauseBox/PauseTag. <br>
+**Physical Device Needed:** Yes
 <div style="display:flex; gap:10px;">
   <img src="media/IMG_1003.jpg" width="50%">
   <img src="media/IMG_1004.jpg" width="50%">
@@ -230,12 +215,12 @@ After the initial shock of it breaking, I simply found it funny. With little eff
 
 ---
 
-## <span style="color:black;"><strong>Unpluq</strong></span>
+## Unpluq
 **Account Required:** Yes (Google, Apple, or Email/Password). <br>
 **Price:** <span style="color:red;">$79.00 (includes 1 Year Unpluq Premium + Unpluq Tag; $66 per year after)</span><br>
 **Available Platforms (iOS / Android):** Both <br>
 **Website:** [https://www.unpluq.com/](https://www.unpluq.com/) <br>
-**Physical Device Needed:** No (the PauseTag is optional; you can unblock/unlock apps by tapping your phone to it, similar to using PauseBox or Brick. However, the app also lets you unblock/unlock via QR code, scrolling, shaking the phone, or by tapping a pattern). <br>
+**Physical Device Needed:** No <br>
 
 <div style="display:flex; gap:10px; flex-wrap:nowrap;">
   <img src="media/unpluq_op.jpg" style="height:420px; object-fit:contain;">
@@ -278,8 +263,8 @@ If the toggle box is **yellow**, the schedule is **ON** and your selected apps w
 - The app UI, while user-friendly in some respects, I find extremely confusing and cluttered. (Unpluq, please consider merging the Home page with the Schedules page).  
 - Pricing: I understand that businesses need to generate revenue, but Unpluq operates on a subscription-based model, which I personally do not like. Paying $66.00 per year for a mobile app, especially in this day and age, is absurd.
 ![Unpluq](media/unpluq_cost.jpg)
-- Unpluq requires an account and collects personal information and app data.* (See: https://www.unpluq.com/pages/privacy).  
-*The app provides more detailed information about optional data collection than the website.
+- Requires an account and collects personal information and app data* <br>
+(See: https://www.unpluq.com/pages/privacy). *The app provides more detailed information about optional data collection than the website.
 
 <div style="display:flex; gap:10px; flex-wrap:wrap;">
   <img src="media/unpluq_info1.jpg" style="width:48%; object-fit:contain;">
@@ -306,7 +291,19 @@ Rating:
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star"></span>
 <span class="fa fa-star"></span> <br>
-Insert what I think here...
+
+I think Unpluq overall is a good company. I see the vision and believe in it. I love the app and its features—especially the feature where there are multiple "Distraction Barriers," so you can choose how strictly you want to restrict yourself from accessing the apps you want to block. I also like how the team at Unpluq HQ cares about the app and updates it constantly, adding new features and fixing bugs. However, I disagree with the decision to run their business model as a subscription. This is my main criticism and the reason I would not recommend Unpluq to a friend. I think paying $66 per year is absurd, and I personally would never pay that much for this app after trying it. Even if Unpluq were $19.99 per year, I still would not pay for a subscription to an app.
+
+This is not strictly against Unpluq—I just hate subscription-based models and do not support businesses or products that use them. We are headed in a direction where businesses and corporate brands push the idea that "you will own nothing and be happy," where you have to pay a subscription to use your [printer or buy printer ink through a subscription plan for a device you already purchased](https://www.hp.com/us-en/all-in-plan/printers.html). In some cases, you are essentially paying just to print on paper—even though you already bought the printer. You also see outlandish prices for streaming platforms while DVDs and physical media are being phased out and no longer sold. We are now living in a world where pirating (which is illegal) has become increasingly common because of the mindset that "if buying isn't owning, pirating isn't stealing." But I am getting ahead of myself and going off topic.
+
+![HP](media/hp_printers.png)
+
+If it were not for the subscription-based model Unpluq uses and what I consider excessive pricing, I would rank Unpluq in my top three recommendations. At the end of the day, I understand that from a business perspective, Unpluq needs to generate revenue somehow. However, contributing to what is a much larger global shift toward subscription-only access is what ultimately withdraws my support and dampens my otherwise positive outlook on the company.
+
+Lastly, I want to reiterate that I am not saying Unpluq is a bad company. I genuinely like the service and the idea behind it. I simply do not support subscription-based business models. If you have been wanting to use Unpluq or are comfortable spending $66 per year, by all means, do so. Unpluq is a solid product, and I am not trying to speak negatively about it.
+
+My 3 out of 5 star rating may seem harsh, but it is not a reflection of the product or service itself—it is solely based on the business model. If I were rating the product while ignoring the subscription model, my true rating would be 4 out of 5. Keep up the good work, Unpluq, and consider reevaluating the business model to avoid contributing to what is abroader industry issue.
+
 </body>
 </html>
   
@@ -314,26 +311,46 @@ Insert what I think here...
 ---
 
 ## Locked
-**Account Required:**  
-**Price:**  
-**Available Platforms (iOS / Android):**  
-**Physical Device Needed:**  
+**Account Required:** No (all data is stored locally). <br>
+**Price:** <span style="color:orange;">$44</span> <br>
+**Available Platforms (iOS / Android):** iOS  <br>
+**Website:** [https://nowlocked.com/](https://nowlocked.com/) <br>
+**Physical Device Needed:** Yes 
+
+![Locked](media/locked_tag.jpg)
 
 **Emergency Unblock**
-- Available:  
-- Method:  
+- Yes, you have 3 Emergency Unlocks every 29 days, and they reset automatically.
+![Locked](media/locked_unlock.gif)
 
 ### How It Works
--  
+- **When you click "Start a Focus Session"** → Choose a profile (with the apps you want to block) and then scan your phone on the **Locked® tag**; the selected apps will be blocked.
+
+- **When you click "End Focus Session"** → Scan your phone on the **Locked® tag**, and all apps will function normally.
+<div style="display:flex; gap:10px; flex-wrap:wrap;">
+  <img src="media/locked_howto.gif" style="height:570px; object-fit:contain;">
+  <img src="media/locked_screens.gif" style="height:570px; object-fit:contain;">
+  <div style="width:100%;">
+    <img src="media/brick_apps_off.jpg" style="height:auto; object-fit:contain; display:block; margin:0 auto;">
+  </div>
+</div> 
 
 ### Pros
--  A
--  B
+- Physical device to enforce app limits and screen time (no one-click workarounds).  
+- Intuitive and easy-to-use app UI (very user-friendly).  
+- Selective app blocking, including websites (block only what you want).  
+- Emergency unblock/unlock option available if needed.  
+- Works offline, and no account creation is required during setup.  
+- Locked does not collect any data from you.  
+- The app is constantly updated with new features.  
+- Locked is available for a one-time cost, providing lifetime access after purchase.
+- When you buy a Locked® tag you not only get a useful tool but also support a small business.
+- Has fun blocking messages; you can choose from Stoic thoughts or Pop Culture.
 
 ### Cons
--  A
--  B
--  C
+- 3D-printed exterior: Locked is a new startup, so the Locked® tag is 3D-printed. The print quality is so high that I initially thought it was made of wood (so this isn’t necessarily a con, just something to be aware of).
+- The app works well but could benefit from additional polish, particularly with a potential UI and UX refresh.
+
 
 <!DOCTYPE html>
 <html>
@@ -353,9 +370,14 @@ Rating:
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span> <br>
-Insert what I think here...
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span> <br>
+
+I think Locked is a great company, and I genuinely like the product. The Locked tag has a unique design approach and is round, similar to a hockey puck. The app is simple and easy to use, and I appreciate that it offers different locking screens and blocking styles.
+
+That said, the simplicity may be a bit too minimal. The UX/UI could benefit from a refresh to feel more modern and polished. It would also be nice to have the ability to change the app’s theme for more personalization. Additionally, I would enjoy seeing more Pop Culture references in the blocking messages, and a playful “roast” mode could make the experience even more engaging.
+
+Overall, I do not have anything really negative to say, just a few ideas that could make an already solid product even better. At $44, the price is on the higher end for this type of product, similar to how I consider Brick to be expensive.
 </body>
 </html>
   
@@ -363,26 +385,56 @@ Insert what I think here...
 ---
 
 ## Bloom
-**Account Required:**  
-**Price:**  
-**Available Platforms (iOS / Android):**  
-**Physical Device Needed:**  
+**Account Required:** Yes (Email/Password) <br>
+**Price:** <span style="color:orange;">$39</span> <br>
+**Available Platforms (iOS / Android):** Both <br>
+**Website:** [https://bloom.inc/](https://bloom.inc/) <br>
+**Physical Device Needed:** Yes <br>
+
+![Bloom](media/bloom_card.jpg)
 
 **Emergency Unblock**
-- Available:  
-- Method:  
+- Available: Yes. You receive three emergency unblocks by default, and one additional unblock is added every 30 days.
+![Bloom](media/bloom_unlock.gif)
 
 ### How It Works
--  
+
+<div style="display:flex; gap:10px;">
+  <img src="media/bloom_on.jpg" width="50%">
+  <img src="media/bloom_off.jpg" width="50%">
+</div>
+
+- **When the Bloom logo is black with a purple outline** → Focus Session is **ON**, apps you select will be blocked.
+
+- **When the Bloom logo is black with a blue outline** → Focus Session is **OFF**, all apps work normally.
+
+- To toggle **Focus Session ON / OFF** → Tap the **Bloom logo** in the app, then **tap your phone to the Bloom Card** to turn Focus Session on or off.
+
+<div style="display:flex; gap:10px; flex-wrap:wrap;">
+  <img src="media/bloom_lock.gif" style="height:600px; object-fit:contain;">
+  <img src="media/bloom_modeOn.jpg" style="height:600px; object-fit:contain;">
+  <div style="width:100%;">
+    <img src="media/brick_apps_off.jpg" style="height:auto; object-fit:contain; display:block; margin:0 auto;">
+  </div>
+</div> 
 
 ### Pros
--  A
--  B
+- Physical device to enforce app limits and screen time (no one-click workarounds).
+- Bloom is available for a one-time cost, providing lifetime access after purchase.
+- Premium-looking and durable metal device.
+- Clean, intuitive, and easy-to-use app UI.
+- Selective app blocking (block only what you want).
+- Emergency unblock/unlock option available if needed.
+- Works on both iOS and Android.
+- The app is constantly updated with new features.
+- Includes a competitive, time-based leaderboard for how long you’ve stayed focused.
 
 ### Cons
--  A
--  B
--  C
+- The UI/UX can feel cluttered and somewhat overwhelming (it could be simplified).
+- Encourages taking breaks rather than maintaining extended focus sessions.
+- Requires an account and collects personal information and app data.*  
+  (See: [Privacy Policy](https://www.termsfeed.com/live/f02a9b1a-591f-43a0-a0ad-10509b957a64))
+- While $39 is on the more affordable end of the spectrum for this type of device, it is, in my opinion, still overpriced for what you are getting.
 
 <!DOCTYPE html>
 <html>
@@ -404,34 +456,52 @@ Rating:
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star"></span>
 <span class="fa fa-star"></span> <br>
-Insert what I think here...
+
+I think the idea behind Bloom is solid, and I understand the appeal of having a physical barrier to reduce distractions. The metal card is an interesting implementation of this concept and gives the product a more premium feel.
+
+That said, I am not a fan of the pricing. While I understand from a business perspective that companies need to make money, $39 feels high for what you are getting. The app also feels cluttered and somewhat messy in its current design. I personally do not like that Bloom encourages taking breaks rather than maintaining extended focus sessions, as that does not align with how I think a focus tool should be structured.
+
+Overall, while the concept is strong, the pricing and app experience make it less appealing to me.
 </body>
 </html>
-  
 
 ---
 
 ## Foqos
-**Account Required:**  
-**Price:**  
-**Available Platforms (iOS / Android):**  
-**Physical Device Needed:**  
+**Account Required:** No <br>
+**Price:** Free <br>
+**Available Platforms (iOS / Android):** iOS <br>
+**Physical Device Needed:** No (but it works best with an NFC device) <br>
+
+![Foqos](media/foqos_tags.jpg)
 
 **Emergency Unblock**
-- Available:  
-- Method:  
+- Available: Yes, you get 3 Emergency Access Unblocks, which reset every 2 weeks (for extra friction, this can be changed to reset up to every 8 weeks).
+![Foqos](media/foqos_unlock.gif)
 
 ### How It Works
--  
+- **When you click "Hold to Start"** → The Focus Session turns **ON**, and the apps you selected will be blocked.
+
+- **When you click "Stop"** → The Focus Session turns **OFF**, and all apps return to normal.
+
+<div style="display:flex; gap:10px; flex-wrap:wrap;">
+  <img src="media/foqos_start.gif" style="height:570px; object-fit:contain;">
+  <img src="media/foqos_screens.gif" style="height:570px; object-fit:contain;">
+  <div style="width:100%;">
+    <img src="media/brick_apps_off.jpg" style="height:auto; object-fit:contain; display:block; margin:0 auto;">
+  </div>
+</div> 
 
 ### Pros
--  A
--  B
+- Foqos is free, providing lifetime access without a purchase.
+- No account creation is required during setup or at all to use the app!
+- Foqos is open source, and you can contribute to the app!
+- The app is highly customizable.
+![Foqos](media/foqos_theme.jpg)
 
 ### Cons
--  A
--  B
--  C
+- The main con would be that the app doesn't feel super polished, but in this case I am actually fine with that because this UI/UX is customizable compared to competitors.
+- Only works on iOS (also known as iPhones).
 
 <!DOCTYPE html>
 <html>
@@ -451,15 +521,16 @@ Rating:
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
 <span class="fa fa-star checked"></span>
-<span class="fa fa-star"></span>
+<span class="fa fa-star checked"></span>
 <span class="fa fa-star"></span> <br>
-Insert what I think here...
+
+Insert what I think here... about Foqos
 </body>
 </html>
   
 
 ---
 
-## Final Thoughts (To be moved up top to TL;DR)
+## Final Thoughts
 
-A con that I want to be 100% clear is across the board for almost all of these products is they guilt trip you with "facts" that they don't sight where they got that imformatiom from with info suctsh as "you will spend an average of 4 years of your life doomscrolling"
+I think that everyone should have some sort of device like this in today's day and age, especially in 2026, to help with our constantly online state and dopamine-addicted brains.
