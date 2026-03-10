@@ -9,7 +9,7 @@ showTableOfContents: true
 ---
 
 ![alt text](featured.jpg)
-Posted on YouTube: [https://youtu.be/3jVCxhk8e1A](https://youtu.be/3jVCxhk8e1A)
+Posted on YouTube: [https://youtu.be/xEhw_81hB08](https://youtu.be/xEhw_81hB08)
 # TL;DR
 
 For many of you, this article might be somewhat overstimulating and hard to read because I may have added too much fluff (and by that I mean there are a lot of images and GIFs). But the takeaway consensus I want you to have is that I believe everyone should have some sort of device like this to help with screen time.
