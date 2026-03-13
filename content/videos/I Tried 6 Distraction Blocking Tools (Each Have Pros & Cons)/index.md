@@ -132,8 +132,8 @@ I think what you are really paying for with the $59 USD is the software: the app
 **Website:** [https://getpausebox.com/](https://getpausebox.com/) <br>
 **Physical Device Needed:** Yes
 <div style="display:flex; gap:10px;">
-  <img src="media/IMG_1003.jpg" width="50%">
-  <img src="media/IMG_1004.jpg" width="50%">
+  <img src="media/pausebox_img.jpg" width="50%">
+  <img src="media/pausetag_img.jpg" width="50%">
 </div>
 
 **Emergency Unblock / Unlocks**
