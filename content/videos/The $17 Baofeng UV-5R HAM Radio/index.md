@@ -1,7 +1,7 @@
 ---
 title: "The $17 Baofeng UV-5R HAM Radio"
 date: 2026-03-16
-summary: "In this post I share my video unboxing and taking a first look at the $17 Baofeng UV-5R, one of the most popular budget amateur radios. The video covers what comes in the box, basic features, and a quick overview of the radio."
+summary: "In this post I share my video unboxing and taking a first look at the $17 Baofeng UV-5R."
 tags: ["Technology", "HAM Radio", "Reviews"]
 ---
 ![alt text](featured.jpg)
