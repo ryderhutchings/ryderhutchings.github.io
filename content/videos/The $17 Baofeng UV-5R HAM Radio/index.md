@@ -14,3 +14,9 @@ Baofeng UV-5R: https://amzn.to/4rChSRx <br>
 
 Affiliate Program(s) Disclosure(s):
 Some of the links below are affiliate links. If you make a purchase through these links, I may earn a small commission at no extra cost to you. Thank you for supporting my channel! If you prefer not using my affiliate links, that’s completely fine.
+
+## How to Use the FM Radio on Your Baofeng UV-5R
+
+Click the orange "CALL" button once to turn on FM radio mode and listen to the radio. To exit, simply click the "CALL" button once again.
+
+![Baofeng UV-5R](media/baofeng_uv-5r.jpg)
