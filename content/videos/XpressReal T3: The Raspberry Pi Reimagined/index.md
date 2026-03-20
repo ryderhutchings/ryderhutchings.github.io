@@ -1,7 +1,6 @@
 ---
 title: "XpressReal T3: The Raspberry Pi Reimagined"
 date: 2026-03-18
-draft: false
 summary: "This is a review of the XpressReal T3 by FydeOS."
 tags: ["SBC", "Radxa", "Reviews"]
 ---
