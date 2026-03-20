@@ -1,10 +1,11 @@
 ---
 title: "The $17 Baofeng UV-5R HAM Radio"
 date: 2026-03-16
-summary: "In this post I share my video unboxing and taking a first look at the $17 Baofeng UV-5R."
+summary: "In this post I share my video unboxing and taking a first look at the $17 Baofeng UV-5R. "
 tags: ["Technology", "HAM Radio", "Reviews"]
 ---
 ![alt text](featured.jpg)
+Last updated on Fri, Mar 20, 2026
 
 Posted on YouTube: [https://youtu.be/rI-7IPeP0_0](https://youtu.be/rI-7IPeP0_0)
 
