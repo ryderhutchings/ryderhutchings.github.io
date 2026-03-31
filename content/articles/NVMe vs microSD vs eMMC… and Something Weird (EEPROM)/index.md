@@ -24,7 +24,7 @@ eMMC, for example, was faster than the microSD cards I had used in the past, and
 
 Then, when the Raspberry Pi 5 was officially released with support for PCIe Gen 2.0 speeds, but with an easy workaround for Gen 3.0 speeds, I picked up a cheap Raspberry Pi M.2 HAT and an accompanying NVMe drive.
 
-![P320 128GB Internal SSD](image.png)
+![P320 128GB Internal SSD](media/image-1.png)
 
 After running a Raspberry Pi operating system from the NVMe drive for a while, I am now hesitant to go back to using microSD cards for running my operating system (OS) just because an NVMe SSD is magnitudes faster and more reliable for data longevity.
 
