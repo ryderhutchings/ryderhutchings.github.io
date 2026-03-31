@@ -1,7 +1,6 @@
 ---
 title: "Beagleboard PocketBeagle 2: This Tiny Board Runs Linux!?"
 date: 2025-08-30
-draft: false
 summary: "This is my first post on my site"
 tags: ["SBC", "BeagleBoard", "Reviews"]
 ---
