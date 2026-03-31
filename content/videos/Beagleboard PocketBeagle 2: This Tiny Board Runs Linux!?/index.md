@@ -13,6 +13,8 @@ The PocketBeagle 2 features 512MB LPDDR4 RAM, includes a microSD card slot for s
 
 Posted on YouTube: [https://youtu.be/7mwR0meClgY](https://youtu.be/7mwR0meClgY)
 
+--- 
+
   sbc-benchmark.md
   
   custom SBC test/report template forked from Jeff Geerling’s sbc-reviews repository

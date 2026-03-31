@@ -12,6 +12,8 @@ In this video, I review Radxa's ROCK 5C, a powerful single-board computer powere
 
 Posted on YouTube: [https://youtu.be/R3_6UD4P_OY](https://youtu.be/R3_6UD4P_OY)
 
+---
+
   sbc-benchmark.md
   
   custom SBC test/report template forked from Jeff Geerling’s sbc-reviews repository
