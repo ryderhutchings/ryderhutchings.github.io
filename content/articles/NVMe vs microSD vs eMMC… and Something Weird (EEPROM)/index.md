@@ -1,7 +1,7 @@
 ---
 title: "NVMe vs microSD vs eMMC… and Something Weird (EEPROM)"
 date: 2026-03-30
-summary: "In this post, I compare storage media like eMMC, microSD, NVMe and more!"
+summary: "This isn’t supposed to be yet another storage comparison that explains what the difference between NVMe, microSD, and eMMC storage media is. It is just a baseline comparison of storage media that you might see in an SBC (minus the EEPROM part, I’ll explain what I mean later)."
 tags: ["Technology", "SBC", "Benchmarks"]
 ---
 ![Thumbnail](featured.jpg)
