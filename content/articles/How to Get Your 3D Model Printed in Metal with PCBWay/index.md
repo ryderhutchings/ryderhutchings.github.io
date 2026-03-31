@@ -1,11 +1,11 @@
 ---
 title: "How to Get Your 3D Model Printed in Metal with PCBWay"
-date: 2026-03-30
+date: 
 summary: "In this post, I'll show you how to get your 3D models printed in metal with PCBWay."
 tags: ["PCBWay", "How-To", "Ad"]
 showTableOfContents: true
 showInList: false
-draft: true
+excludeFromHome: true
 ---
 ![Thumbnail](featured.jpg)
 
