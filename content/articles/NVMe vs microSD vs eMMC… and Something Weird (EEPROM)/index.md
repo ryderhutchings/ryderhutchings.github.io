@@ -1,7 +1,6 @@
 ---
 title: "NVMe vs microSD vs eMMC… and Something Weird (EEPROM)"
 date: 2026-03-30
-draft: true 
 summary: "In this post, I compare storage media like eMMC, microSD, NVMe and more!"
 tags: ["Technology", "SBC", "Benchmarks"]
 ---
