@@ -14,7 +14,7 @@ hidden: true
 > [!NOTE] 
 > Starting in February 2026, I am starting my own business around my social media channels. Thanks for sticking with me as my content keeps changing and improving!
 
-Hey, I’m Ryder! I’m a small content creator and buinsess owner who reviews technology, shares tutorials, and creates videos about hobbies.
+Hey, I’m Ryder! I’m a small content creator and buinsess owner who reviews technology, shares tutorials, and creates videos about my hobbies and intrests.
 
 ### What I Make / My Work
 

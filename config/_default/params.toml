@@ -56,7 +56,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   # homepageImage = "banner.jpg" # used in: hero, and card
   showRecent = true
   showRecentItems = 20
-  showMoreLink = true
+  showMoreLink = false
   showMoreLinkDest = "/content/"
   cardView = true
   cardViewScreenWidth = false
@@ -65,12 +65,12 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 
 [article]
   showDate = true
-  showViews = true
+  showViews = false
   showLikes = false
-  showDateOnlyInArticle = false
+  showDateOnlyInArticle = true
   showDateUpdated = true
   showAuthor = false
-  showAuthorBottom = false
+  showAuthorBottom = true
   showHero = false
   heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
@@ -90,10 +90,10 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   # relatedContentLimit = 3
   showTaxonomies = true # use showTaxonomies OR showCategoryOnly, not both
   showCategoryOnly = false # use showTaxonomies OR showCategoryOnly, not both
-  showAuthorsBadges = false
+  showAuthorsBadges = true
   showWordCount = false
   sharingLinks = [ "twitter", "reddit", "email", "whatsapp"]
-  showZenMode = false
+  showZenMode = true
   # externalLinkForceNewTab = false # disable to allow external links in the same tab (defaults to true)
 
 [list]
