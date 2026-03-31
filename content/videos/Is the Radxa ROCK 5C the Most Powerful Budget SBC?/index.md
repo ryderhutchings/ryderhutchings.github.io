@@ -5,15 +5,12 @@ draft: false
 summary: "This is my first post on my site"
 tags: ["SBC", "Radxa", "Reviews"]
 ---
-![alt text](featured.jpg)
+<img width="800" height="600" alt="IMG_4895" src="https://gist.github.com/user-attachments/assets/2052f002-65a6-4aff-ae2e-493b4b0cbb79" />
+
 
 In this video, I review Radxa's ROCK 5C, a powerful single-board computer powered by the 8-core Rockchip RK3588S2 SoC, featuring 4x Cortex-A76 and 4x Cortex-A55 cores.
 
 Posted on YouTube: [https://youtu.be/R3_6UD4P_OY](https://youtu.be/R3_6UD4P_OY)
-
-<img width="800" height="600" alt="IMG_4895" src="https://gist.github.com/user-attachments/assets/2052f002-65a6-4aff-ae2e-493b4b0cbb79" />
-
-
 
 ## Basic Information:
 

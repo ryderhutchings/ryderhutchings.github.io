@@ -1,6 +1,6 @@
 ---
 title: "I Tried 6 Distraction Blocking Tools (Each Have Pros & Cons)"
-date: 2026-02-26
+date: 2026-03-10
 draft: false
 summary: "I tested six distraction blocking tools like Brick, Bloom, Unpluq, Foqos, Locked, and PauseBox and compared them to the best of my abilities."
 tags: ["Technology", "NFC", "Reviews"]

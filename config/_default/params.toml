@@ -55,7 +55,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   layout = "profile" # valid options: page, profile, hero, card, background, custom
   # homepageImage = "banner.jpg" # used in: hero, and card
   showRecent = true
-  showRecentItems = 10
+  showRecentItems = 20
   showMoreLink = true
   showMoreLinkDest = "/content/"
   cardView = true
@@ -64,8 +64,8 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   disableHeroImageFilter = true # only used when layout equals hero 
 
 [article]
-  showDate = false
-  showViews = false
+  showDate = true
+  showViews = true
   showLikes = false
   showDateOnlyInArticle = false
   showDateUpdated = true
