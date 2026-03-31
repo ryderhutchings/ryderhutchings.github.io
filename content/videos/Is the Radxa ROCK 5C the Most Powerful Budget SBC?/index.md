@@ -2,7 +2,7 @@
 title: "Is the Radxa ROCK 5C the Most Powerful Budget SBC?"
 date: 2025-07-17
 draft: false
-summary: "This is my first post on my site"
+summary: "The complete benchmark results for the Radxa ROCK 5C, including tests that didn't make it into my orginal YouTube video."
 tags: ["SBC", "Radxa", "Reviews"]
 ---
 <img width="800" height="600" alt="IMG_4895" src="https://gist.github.com/user-attachments/assets/2052f002-65a6-4aff-ae2e-493b4b0cbb79" />
