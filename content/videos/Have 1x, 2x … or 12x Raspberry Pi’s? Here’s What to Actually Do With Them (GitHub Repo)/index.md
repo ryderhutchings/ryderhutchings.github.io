@@ -3,7 +3,7 @@ title: "Have 1x, 2x … or 12x Raspberry Pi’s? Here’s What to Actually Do Wi
 date: 2025-06-25
 draft: false
 summary: "This is my first post on my site"
-tags: ["SBC", "Raspberry Pi", "Reviews"]
+tags: ["SBC", "Raspberry Pi"]
 ---
 ![alt text](featured.jpg)
 

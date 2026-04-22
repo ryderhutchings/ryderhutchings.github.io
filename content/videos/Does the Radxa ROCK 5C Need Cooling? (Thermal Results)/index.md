@@ -3,7 +3,7 @@ title: "Does the Radxa ROCK 5C Need Cooling? (Thermal Results)"
 date: 2025-10-17
 draft: false
 summary: "This is my first post on my site"
-tags: ["SBC", "Radxa", "Reviews"]
+tags: ["SBC", "Radxa", "Benchmarks"]
 ---
 ![alt text](featured.jpg)
 
