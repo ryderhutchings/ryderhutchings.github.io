@@ -1,0 +1,34 @@
+{{ $rss := "https://www.youtube.com/feeds/videos.xml?channel_id=UCfYoumlckdDcox4TtxZiKtA" }}
+{{ with resources.GetRemote $rss }}
+  {{ $data := . | transform.Unmarshal }}
+  {{ $count := 0 }}
+  {{ range $data.entry }}
+    {{ $href := index .link "-href" }}
+    {{ if not (strings.Contains $href "/shorts/") }}
+      {{ if lt $count 5 }}
+        <p>
+          <a href="{{ $href }}" target="_blank">{{ .title }}</a><br>
+          <small>{{ dateFormat "January 2, 2006" .published }} · {{ index .group.community.statistics "-views" }} views</small>
+        </p>
+        {{ $count = add $count 1 }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+
+
+<!-- old
+
+{{ $rss := "https://www.youtube.com/feeds/videos.xml?channel_id=UCfYoumlckdDcox4TtxZiKtA" }}
+{{ with resources.GetRemote $rss }}
+  {{ $data := . | transform.Unmarshal }}
+  {{ range first 5 $data.entry }}
+    <p>
+      <a href="{{ index .link "-href" }}" target="_blank">{{ .title }}</a><br>
+      <small>{{ dateFormat "January 2, 2006" .published }} · {{ index .group.community.statistics "-views" }} views</small>
+    </p>
+  {{ end }}
+{{ end }}
+
+-->

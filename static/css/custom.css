@@ -1,0 +1,40 @@
+:root {
+  --callout-note-bg:      #e9f2f2;
+  --callout-tip-bg:       #ebf8f0;
+  --callout-info-bg:      #e8f0f8;
+  --callout-warning-bg:   #fdf3e3;
+  --callout-important-bg: #fdecea;
+  --callout-tldr-bg:      #f3edfb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --callout-note-bg:      #2a3d3d;
+    --callout-tip-bg:       #243d2e;
+    --callout-info-bg:      #243048;
+    --callout-warning-bg:   #3d3018;
+    --callout-important-bg: #3d2424;
+    --callout-tldr-bg:      #2e2440;
+  }
+}
+
+/* Callouts */
+.callout {
+  padding: 12px 16px;
+  border-radius: 4px;
+  margin: 16px 0;
+  border-left: 4px solid;
+}
+
+.callout-note      { background-color: var(--callout-note-bg);      border-color: #7c8383; }
+.callout-tip       { background-color: var(--callout-tip-bg);       border-color: #2e9252; }
+.callout-info      { background-color: var(--callout-info-bg);      border-color: #3273dc; }
+.callout-warning   { background-color: var(--callout-warning-bg);   border-color: #e6a817; }
+.callout-important { background-color: var(--callout-important-bg); border-color: #e03c31; }
+.callout-tldr      { background-color: var(--callout-tldr-bg);      border-color: #8b6fcb; }
+
+/* GitHub shields.io alignment */
+img[src*="shields.io"] {
+  display: inline;
+  vertical-align: middle;
+}

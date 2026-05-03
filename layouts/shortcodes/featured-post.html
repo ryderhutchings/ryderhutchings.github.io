@@ -1,0 +1,5 @@
+{{ range where .Site.Pages "Params.featured" true }}
+<strong><a href="{{ .RelPermalink }}">{{ .Title }}</a></strong> — {{ .Params.description }}
+<blockquote>{{ .Summary }}</blockquote>
+<a href="{{ .RelPermalink }}">Read more →</a>
+{{ end }}

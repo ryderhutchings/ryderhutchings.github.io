@@ -1,0 +1,6 @@
+{{ if not (eq .RelPermalink "/home/") }}
+<a href="{{ "" | relURL }}" class="title">
+  <h2 style="font-size:1.6rem;"><img src="/images/profile_picture.png" style="width:42px; height:42px; border-radius:50%; vertical-align:middle; margin-right:10px;">{{ .Site.Title }}</h2>
+</a>
+{{ end }}
+<nav>{{- partial "nav.html" . -}}</nav>

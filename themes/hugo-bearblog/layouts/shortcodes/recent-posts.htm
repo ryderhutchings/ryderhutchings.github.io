@@ -1,0 +1,7 @@
+{{ $posts := where .Site.RegularPages "Section" "blog" }}
+{{ range first 5 $posts }}
+<p>
+  <a href="{{ .RelPermalink }}">{{ .Title }}</a><br>
+  <small>{{ .Date.Format "January 2, 2006" }}{{ with .Params.tags }} · {{ index . 0 }}{{ end }}</small>
+</p>
+{{ end }}

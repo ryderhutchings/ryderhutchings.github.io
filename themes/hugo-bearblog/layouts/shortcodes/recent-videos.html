@@ -1,0 +1,19 @@
+{{ $rss := "https://www.youtube.com/feeds/videos.xml?channel_id=UCfYoumlckdDcox4TtxZiKtA" }}
+{{ with resources.GetRemote $rss }}
+  {{ $data := . | transform.Unmarshal }}
+  {{ range first 3 $data.entry }}
+    {{ $views := int (index .group.community.statistics "-views") }}
+    {{ $viewsFormatted := "" }}
+    {{ if ge $views 1000000 }}
+      {{ $viewsFormatted = printf "%.1fM" (div (float $views) 1000000.0) }}
+    {{ else if ge $views 1000 }}
+      {{ $viewsFormatted = printf "%.1fK" (div (float $views) 1000.0) }}
+    {{ else }}
+      {{ $viewsFormatted = printf "%d" $views }}
+    {{ end }}
+    <p>
+      <a href="{{ index .link "-href" }}" target="_blank">{{ .title }}</a><br>
+      <small>{{ dateFormat "January 2, 2006" .published }} · {{ $viewsFormatted }} views</small>
+    </p>
+  {{ end }}
+{{ end }}
