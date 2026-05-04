@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="http://localhost:1313/images/favicon.png" />
+<title>Revisiting the BeagleBoard PocketBeagle 2 | Ryder Hutchings</title>
+<meta name="title" content="Revisiting the BeagleBoard PocketBeagle 2" />
+<meta name="description" content="Summary
+
+PocketBeagle 2 (TI AM6254), 2 Cortex-A53 cores available @ ~1 GHz
+512 MB RAM (≈410 MB usable), heavy swap usage (3.2 GB)
+microSD storage with swap enabled
+Debian 13 (Trixie)
+No GPU or hardware acceleration
+
+
+Basic Information
+
+Mfr. URL (official): beagleboard.org
+Board purchased from: N/A (provided by BeagleBoard)
+Board purchase date: N/A
+Board specs (as tested): N/A
+Board price (as tested): $28.13
+
+Linux/System Information
+# output of `screenfetch`
+         _,met$$$$$gg.           ryderhutchings@pocketbeagle2.local
+      ,g$$$$$$$$$$$$$$$P.        OS: Debian 13 trixie
+    ,g$$P&#34;&#34;       &#34;&#34;&#34;Y$$.&#34;.      Kernel: aarch64 Linux 6.18.10-arm64-k3-r23
+   ,$$P&#39;              `$$$.      Uptime: 2h 16m
+  &#39;,$$P       ,ggs.     `$$b:    Packages: 891
+  `d$$&#39;     ,$P&#34;&#39;   .    $$$     Shell: bash 5.2.37
+   $$P      d$&#39;     ,    $$P     Disk: 25G / 29G (92%)
+   $$:      $$.   -    ,d$$&#39;     CPU: ARM Cortex-A53 @ 2x 1GHz
+   $$\;      Y$b._   _,d$P&#39;      RAM: 154MiB / 410MiB
+   Y$$.    `.`&#34;Y$$$$P&#34;&#39;         
+   `$$b      &#34;-.__              
+    `Y$$                        
+     `Y$$.                      
+       `$$b.                    
+         `Y$$b.                 
+            `&#34;Y$b._             
+                `&#34;&#34;&#34;&#34;                                      
+
+# output of `uname -a`
+Linux pocketbeagle2.local 6.18.10-arm64-k3-r23 #1 SMP PREEMPT_RT Wed Feb 11 22:31:43 UTC 2026 aarch64 GNU/Linux
+System Topology
+ 
+Note: lstopo results may be missing some information on new and strange SoCs." />
+<meta name="keywords" content="Benchmarks,SBC," />
+
+
+<meta property="og:url" content="http://localhost:1313/revisiting-the-beagleboard-pocketbeagle-2/">
+  <meta property="og:site_name" content="Ryder Hutchings">
+  <meta property="og:title" content="Revisiting the BeagleBoard PocketBeagle 2">
+  <meta property="og:description" content="Summary PocketBeagle 2 (TI AM6254), 2 Cortex-A53 cores available @ ~1 GHz 512 MB RAM (≈410 MB usable), heavy swap usage (3.2 GB) microSD storage with swap enabled Debian 13 (Trixie) No GPU or hardware acceleration Basic Information Mfr. URL (official): beagleboard.org Board purchased from: N/A (provided by BeagleBoard) Board purchase date: N/A Board specs (as tested): N/A Board price (as tested): $28.13 Linux/System Information # output of `screenfetch` _,met$$$$$gg. ryderhutchings@pocketbeagle2.local ,g$$$$$$$$$$$$$$$P. OS: Debian 13 trixie ,g$$P&#34;&#34; &#34;&#34;&#34;Y$$.&#34;. Kernel: aarch64 Linux 6.18.10-arm64-k3-r23 ,$$P&#39; `$$$. Uptime: 2h 16m &#39;,$$P ,ggs. `$$b: Packages: 891 `d$$&#39; ,$P&#34;&#39; . $$$ Shell: bash 5.2.37 $$P d$&#39; , $$P Disk: 25G / 29G (92%) $$: $$. - ,d$$&#39; CPU: ARM Cortex-A53 @ 2x 1GHz $$\; Y$b._ _,d$P&#39; RAM: 154MiB / 410MiB Y$$. `.`&#34;Y$$$$P&#34;&#39; `$$b &#34;-.__ `Y$$ `Y$$. `$$b. `Y$$b. `&#34;Y$b._ `&#34;&#34;&#34;&#34; # output of `uname -a` Linux pocketbeagle2.local 6.18.10-arm64-k3-r23 #1 SMP PREEMPT_RT Wed Feb 11 22:31:43 UTC 2026 aarch64 GNU/Linux System Topology Note: lstopo results may be missing some information on new and strange SoCs.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2026-04-26T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-04-26T00:00:00+00:00">
+    <meta property="article:tag" content="Benchmarks">
+    <meta property="article:tag" content="SBC">
+    <meta property="og:image" content="http://localhost:1313/images/share.png">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/share.png">
+  <meta name="twitter:title" content="Revisiting the BeagleBoard PocketBeagle 2">
+  <meta name="twitter:description" content="Summary PocketBeagle 2 (TI AM6254), 2 Cortex-A53 cores available @ ~1 GHz 512 MB RAM (≈410 MB usable), heavy swap usage (3.2 GB) microSD storage with swap enabled Debian 13 (Trixie) No GPU or hardware acceleration Basic Information Mfr. URL (official): beagleboard.org Board purchased from: N/A (provided by BeagleBoard) Board purchase date: N/A Board specs (as tested): N/A Board price (as tested): $28.13 Linux/System Information # output of `screenfetch` _,met$$$$$gg. ryderhutchings@pocketbeagle2.local ,g$$$$$$$$$$$$$$$P. OS: Debian 13 trixie ,g$$P&#34;&#34; &#34;&#34;&#34;Y$$.&#34;. Kernel: aarch64 Linux 6.18.10-arm64-k3-r23 ,$$P&#39; `$$$. Uptime: 2h 16m &#39;,$$P ,ggs. `$$b: Packages: 891 `d$$&#39; ,$P&#34;&#39; . $$$ Shell: bash 5.2.37 $$P d$&#39; , $$P Disk: 25G / 29G (92%) $$: $$. - ,d$$&#39; CPU: ARM Cortex-A53 @ 2x 1GHz $$\; Y$b._ _,d$P&#39; RAM: 154MiB / 410MiB Y$$. `.`&#34;Y$$$$P&#34;&#39; `$$b &#34;-.__ `Y$$ `Y$$. `$$b. `Y$$b. `&#34;Y$b._ `&#34;&#34;&#34;&#34; # output of `uname -a` Linux pocketbeagle2.local 6.18.10-arm64-k3-r23 #1 SMP PREEMPT_RT Wed Feb 11 22:31:43 UTC 2026 aarch64 GNU/Linux System Topology Note: lstopo results may be missing some information on new and strange SoCs.">
+
+
+
+
+  <meta itemprop="name" content="Revisiting the BeagleBoard PocketBeagle 2">
+  <meta itemprop="description" content="Summary PocketBeagle 2 (TI AM6254), 2 Cortex-A53 cores available @ ~1 GHz 512 MB RAM (≈410 MB usable), heavy swap usage (3.2 GB) microSD storage with swap enabled Debian 13 (Trixie) No GPU or hardware acceleration Basic Information Mfr. URL (official): beagleboard.org Board purchased from: N/A (provided by BeagleBoard) Board purchase date: N/A Board specs (as tested): N/A Board price (as tested): $28.13 Linux/System Information # output of `screenfetch` _,met$$$$$gg. ryderhutchings@pocketbeagle2.local ,g$$$$$$$$$$$$$$$P. OS: Debian 13 trixie ,g$$P&#34;&#34; &#34;&#34;&#34;Y$$.&#34;. Kernel: aarch64 Linux 6.18.10-arm64-k3-r23 ,$$P&#39; `$$$. Uptime: 2h 16m &#39;,$$P ,ggs. `$$b: Packages: 891 `d$$&#39; ,$P&#34;&#39; . $$$ Shell: bash 5.2.37 $$P d$&#39; , $$P Disk: 25G / 29G (92%) $$: $$. - ,d$$&#39; CPU: ARM Cortex-A53 @ 2x 1GHz $$\; Y$b._ _,d$P&#39; RAM: 154MiB / 410MiB Y$$. `.`&#34;Y$$$$P&#34;&#39; `$$b &#34;-.__ `Y$$ `Y$$. `$$b. `Y$$b. `&#34;Y$b._ `&#34;&#34;&#34;&#34; # output of `uname -a` Linux pocketbeagle2.local 6.18.10-arm64-k3-r23 #1 SMP PREEMPT_RT Wed Feb 11 22:31:43 UTC 2026 aarch64 GNU/Linux System Topology Note: lstopo results may be missing some information on new and strange SoCs.">
+  <meta itemprop="datePublished" content="2026-04-26T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2026-04-26T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1261">
+  <meta itemprop="image" content="http://localhost:1313/images/share.png">
+  <meta itemprop="keywords" content="Benchmarks,SBC">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  :root {
+    --width: 720px;
+    --font-main: Verdana, sans-serif;
+    --font-secondary: Verdana, sans-serif;
+    --font-scale: 1em;
+    --background-color: #fff;
+    --heading-color: #222;
+    --text-color: #444;
+    --link-color: #3273dc;
+    --visited-color: #8b6fcb;
+    --blockquote-color: #222;
+  }
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #2a2524;
+    --heading-color: #FFFFFF;
+    --text-color: #FFFFFF;
+    --link-color: #BDD0CFff;
+    --visited-color: #c9e2e1;
+    --blockquote-color: #ffffff;
+  }
+}
+
+  body {
+    font-family: var(--font-secondary);
+    font-size: var(--font-scale);
+    margin: auto;
+    padding: 20px;
+    max-width: var(--width);
+    text-align: left;
+    background-color: var(--background-color);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--text-color);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-main);
+    color: var(--heading-color);
+  }
+
+  a {
+    color: var(--link-color);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  nav a {
+    margin-right: 8px;
+  }
+
+  strong,
+  b {
+    color: var(--heading-color);
+  }
+
+  button {
+    margin: 0;
+    cursor: pointer;
+  }
+
+  time {
+    font-family: monospace;
+    font-style: normal;
+    font-size: 15px;
+  }
+
+  main {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px dashed;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    font-family: monospace;
+    padding: 2px;
+    border-radius: 3px;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: var(--blockquote-color);
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px 0;
+    text-align: center;
+  }
+
+  .title:hover {
+    text-decoration: none;
+  }
+
+  .title h1 {
+    font-size: 1.5em;
+  }
+
+  .inline {
+    width: auto !important;
+  }
+
+  .highlight,
+  .code {
+    border-radius: 3px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    overflow-x: auto;
+  }
+
+  .highlight pre,
+  .code pre {
+    min-width: 100%;
+    width: max-content;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: var(--visited-color);
+  }
+
+</style>
+
+
+<link rel="stylesheet" href="/css/custom.css"></head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2 style="font-size:1.6rem;"><img src="/images/profile_picture.png" style="width:42px; height:42px; border-radius:50%; vertical-align:middle; margin-right:10px;">Ryder Hutchings</h2>
+</a>
+<nav>
+<a href="/home/">Home</a>
+
+<a href="/blog/">Blog</a>
+
+<a href="/about/">About</a>
+
+<a href="/contact/">Contact</a>
+
+</nav>
+
+<hr></header>
+  <main>
+
+<h1>Revisiting the BeagleBoard PocketBeagle 2</h1>
+<p>
+  <i>
+    <time datetime='2026-04-26'>
+      26 Apr, 2026
+    </time>
+  </i>
+</p>
+
+<content>
+  <h3 id="summary">Summary</h3>
+<ul>
+<li>PocketBeagle 2 (TI AM6254), 2 Cortex-A53 cores available @ ~1 GHz</li>
+<li>512 MB RAM (≈410 MB usable), heavy swap usage (3.2 GB)</li>
+<li>microSD storage with swap enabled</li>
+<li>Debian 13 (Trixie)</li>
+<li>No GPU or hardware acceleration</li>
+</ul>
+<hr>
+<h3 id="basic-information">Basic Information</h3>
+<ul>
+<li>Mfr. URL (official): <a href="https://www.beagleboard.org/boards/pocketbeagle-2">beagleboard.org</a></li>
+<li>Board purchased from: N/A (provided by BeagleBoard)</li>
+<li>Board purchase date: N/A</li>
+<li>Board specs (as tested): N/A</li>
+<li>Board price (as tested): $28.13</li>
+</ul>
+<h3 id="linuxsystem-information">Linux/System Information</h3>
+<pre tabindex="0"><code># output of `screenfetch`
+         _,met$$$$$gg.           ryderhutchings@pocketbeagle2.local
+      ,g$$$$$$$$$$$$$$$P.        OS: Debian 13 trixie
+    ,g$$P&#34;&#34;       &#34;&#34;&#34;Y$$.&#34;.      Kernel: aarch64 Linux 6.18.10-arm64-k3-r23
+   ,$$P&#39;              `$$$.      Uptime: 2h 16m
+  &#39;,$$P       ,ggs.     `$$b:    Packages: 891
+  `d$$&#39;     ,$P&#34;&#39;   .    $$$     Shell: bash 5.2.37
+   $$P      d$&#39;     ,    $$P     Disk: 25G / 29G (92%)
+   $$:      $$.   -    ,d$$&#39;     CPU: ARM Cortex-A53 @ 2x 1GHz
+   $$\;      Y$b._   _,d$P&#39;      RAM: 154MiB / 410MiB
+   Y$$.    `.`&#34;Y$$$$P&#34;&#39;         
+   `$$b      &#34;-.__              
+    `Y$$                        
+     `Y$$.                      
+       `$$b.                    
+         `Y$$b.                 
+            `&#34;Y$b._             
+                `&#34;&#34;&#34;&#34;                                      
+
+# output of `uname -a`
+Linux pocketbeagle2.local 6.18.10-arm64-k3-r23 #1 SMP PREEMPT_RT Wed Feb 11 22:31:43 UTC 2026 aarch64 GNU/Linux
+</code></pre><h3 id="system-topology">System Topology</h3>
+<p><img src="media/lstopo.png" alt="lstopo"> <br>
+Note: lstopo results may be missing some information on new and strange SoCs.</p>
+<hr>
+<h3 id="cpu">CPU</h3>
+<h4 id="geekbench-6-results">Geekbench 6 results:</h4>
+<p>See: <a href="https://browser.geekbench.com/v6/cpu/17780795">https://browser.geekbench.com/v6/cpu/17780795</a></p>
+<ul>
+<li>23 Single-Core Score / 13 Multi-Core Score</li>
+</ul>
+<div class="callout callout-warning">
+  <strong style="display:flex; align-items:center; gap:6px;">
+    
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> Warning
+    
+  </strong><br>
+Geekbench 6 took over 32 hours to complete. The system is heavily memory-constrained, resulting in extensive swap usage that severely impacts performance.
+
+</div>
+<h4 id="top500-benchmark-results">top500-benchmark results:</h4>
+<p>See: <a href="https://github.com/geerlingguy/top500-benchmark">geerlingguy/top500-benchmark</a></p>
+<details>
+<summary>Click to expand HPLinpack / top500-benchmark results</summary>
+<pre tabindex="0"><code>TODO
+</code></pre></details>
+<ul>
+<li>TODO Gflops at TODO W, for ~TODO Gflops/W</li>
+</ul>
+<h4 id="sysbench-results">sysbench results:</h4>
+<p>See: <a href="https://github.com/akopytov/sysbench">akopytov/sysbench</a></p>
+<div class="callout callout-note">
+  <strong style="display:flex; align-items:center; gap:6px;">
+    
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg> Note
+    
+  </strong><br>
+CPU performance is low, but consistent for a small embedded ARM system.
+
+</div>
+<pre tabindex="0"><code>CPU speed:
+    events per second:   359.02
+
+General statistics:
+    total time:                          10.0028s
+    total number of events:              3594
+
+Latency (ms):
+         min:                                    4.94
+         avg:                                    5.56
+         max:                                   13.04
+         95th percentile:                        8.90
+         sum:                                19996.82
+
+Threads fairness:
+    events (avg/stddev):           1797.0000/2.00
+    execution time (avg/stddev):   9.9984/0.00
+</code></pre><h4 id="coremark-results">CoreMark results:</h4>
+<p>TODO</p>
+<h4 id="embench-results">Embench results:</h4>
+<p>TODO</p>
+<hr>
+<h3 id="thermals">Thermals</h3>
+<p>N/A</p>
+<hr>
+<h3 id="power">Power</h3>
+<p>N/A</p>
+<hr>
+<h3 id="disk">Disk</h3>
+<h4 id="external-microsd-usd00-128gb">External microSD (USD00-128GB)</h4>
+<table>
+  <thead>
+      <tr>
+          <th>Benchmark</th>
+          <th>Result</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>iozone 4K random read</td>
+          <td>11.26 MB/s</td>
+      </tr>
+      <tr>
+          <td>iozone 4K random write</td>
+          <td>4.62 MB/s</td>
+      </tr>
+      <tr>
+          <td>iozone 1M random read</td>
+          <td>84.58 MB/s</td>
+      </tr>
+      <tr>
+          <td>iozone 1M random write</td>
+          <td>58.45 MB/s</td>
+      </tr>
+      <tr>
+          <td>iozone 1M sequential read</td>
+          <td>85.47 MB/s</td>
+      </tr>
+      <tr>
+          <td>iozone 1M sequential write</td>
+          <td>54.93 MB/s</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="network">Network</h3>
+<div class="callout callout-important">
+  <strong style="display:flex; align-items:center; gap:6px;">
+    
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg> Important
+    
+  </strong><br>
+No built-in WiFi. Networking is over USB (USB Ethernet).
+
+</div>
+<h4 id="iperf3-results">iperf3 results:</h4>
+<ul>
+<li><code>iperf3 -c $SERVER_IP</code>: 317 Mbps</li>
+<li><code>iperf3 -c $SERVER_IP --reverse</code>: 324 Mbps</li>
+<li><code>iperf3 -c $SERVER_IP --bidir</code>: 200 Mbps up, 166 Mbps down</li>
+</ul>
+<h4 id="nuttcp-results">nuttcp results:</h4>
+<ul>
+<li><code>nuttcp -t $SERVER_IP</code>: 398.41 MB / 10.05 sec = 332.44 Mbps</li>
+</ul>
+<hr>
+<h3 id="gpu">GPU</h3>
+<div class="callout callout-note">
+  <strong style="display:flex; align-items:center; gap:6px;">
+    
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg> Note
+    
+  </strong><br>
+The TI AM6254 SoC does not include a GPU. No DRM device (`/dev/dri`) is present, and OpenGL/Vulkan workloads are not supported.
+
+</div>
+<h4 id="glmark2-results">glmark2 results:</h4>
+<p>N/A</p>
+<h4 id="vkmark-results">vkmark results:</h4>
+<p>N/A</p>
+<h4 id="gravitymark-results">GravityMark results:</h4>
+<p>N/A</p>
+<hr>
+<h3 id="llm-inference">LLM Inference</h3>
+<div class="callout callout-warning">
+  <strong style="display:flex; align-items:center; gap:6px;">
+    
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> Warning
+    
+  </strong><br>
+Larger models run slowly due to limited RAM and swap usage, so results may not reflect true model capability.
+
+</div>
+<p>Basic <code>ollama</code> LLM model inference results:</p>
+<p>Running benchmark 3 times using model: smollm:135m</p>
+<p>TODO</p>
+<p>Running benchmark 3 times using model: tinyllama:1.1b</p>
+<table>
+  <thead>
+      <tr>
+          <th>Run</th>
+          <th>Eval Rate (Tokens/Second)</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>0.02 tokens/s</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>0.02 tokens/s</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>FAILED (broken pipe)</td>
+      </tr>
+      <tr>
+          <td><em>Average Eval Rate</em>*</td>
+          <td>N/A</td>
+      </tr>
+  </tbody>
+</table>
+<p>System used around TODO W during inference.</p>
+<hr>
+<h3 id="memory">Memory</h3>
+<div class="callout callout-note">
+  <strong style="display:flex; align-items:center; gap:6px;">
+    
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg> Note
+    
+  </strong><br>
+Memory is fast enough on paper, but real performance drops under load due to swap and cache pressure.
+
+</div>
+<h4 id="tinymembench-results">tinymembench results:</h4>
+<p>See: <a href="https://github.com/rojaster/tinymembench">rojaster/tinymembench</a></p>
+<details>
+<summary>Click to expand tinymembench benchmark results</summary>
+<pre tabindex="0"><code>tinymembench v0.4.10 (simple benchmark for memory throughput and latency)
+
+==========================================================================
+== Memory bandwidth tests                                               ==
+==                                                                      ==
+== Note 1: 1MB = 1000000 bytes                                          ==
+== Note 2: Results for &#39;copy&#39; tests show how many bytes can be          ==
+==         copied per second (adding together read and writen           ==
+==         bytes would have provided twice higher numbers)              ==
+== Note 3: 2-pass copy means that we are using a small temporary buffer ==
+==         to first fetch data into it, and only then write it to the   ==
+==         destination (source -&gt; L1 cache, L1 cache -&gt; destination)    ==
+== Note 4: If sample standard deviation exceeds 0.1%, it is shown in    ==
+==         brackets                                                     ==
+==========================================================================
+
+ C copy backwards                                     :   1016.3 MB/s (0.8%)
+ C copy backwards (32 byte blocks)                    :   1001.3 MB/s (1.4%)
+ C copy backwards (64 byte blocks)                    :    968.7 MB/s (0.3%)
+ C copy                                               :    999.0 MB/s (1.5%)
+ C copy prefetched (32 bytes step)                    :    848.5 MB/s
+ C copy prefetched (64 bytes step)                    :    921.8 MB/s
+ C 2-pass copy                                        :    847.8 MB/s (0.1%)
+ C 2-pass copy prefetched (32 bytes step)             :    592.4 MB/s
+ C 2-pass copy prefetched (64 bytes step)             :    373.6 MB/s (0.6%)
+ C fill                                               :   2130.4 MB/s (0.1%)
+ C fill (shuffle within 16 byte blocks)               :   2130.0 MB/s
+ C fill (shuffle within 32 byte blocks)               :   2129.1 MB/s
+ C fill (shuffle within 64 byte blocks)               :   2129.8 MB/s (0.4%)
+ NEON 64x2 COPY                                       :   1037.3 MB/s
+ NEON 64x2x4 COPY                                     :   1033.1 MB/s
+ NEON 64x1x4_x2 COPY                                  :   1070.2 MB/s (0.3%)
+ NEON 64x2 COPY prefetch x2                           :    259.4 MB/s
+ NEON 64x2x4 COPY prefetch x1                         :   1207.1 MB/s
+ NEON 64x2 COPY prefetch x1                           :   1173.2 MB/s
+ NEON 64x2x4 COPY prefetch x1                         :   1206.8 MB/s
+ ---
+ standard memcpy                                      :    965.9 MB/s (1.2%)
+ standard memset                                      :   2129.2 MB/s
+ ---
+ NEON LDP/STP copy                                    :   1030.9 MB/s (0.1%)
+ NEON LDP/STP copy pldl2strm (32 bytes step)          :    746.3 MB/s (0.7%)
+ NEON LDP/STP copy pldl2strm (64 bytes step)          :    941.1 MB/s
+ NEON LDP/STP copy pldl1keep (32 bytes step)          :   1185.9 MB/s
+ NEON LDP/STP copy pldl1keep (64 bytes step)          :   1184.1 MB/s (0.1%)
+ NEON LD1/ST1 copy                                    :   1032.1 MB/s
+ NEON STP fill                                        :   2130.9 MB/s (0.1%)
+ NEON STNP fill                                       :   1100.1 MB/s (0.4%)
+ ARM LDP/STP copy                                     :   1030.8 MB/s (0.2%)
+ ARM STP fill                                         :   2130.6 MB/s (0.3%)
+ ARM STNP fill                                        :   1103.7 MB/s (0.7%)
+
+==========================================================================
+== Memory latency test                                                  ==
+==                                                                      ==
+== Average time is measured for random memory accesses in the buffers   ==
+== of different sizes. The larger is the buffer, the more significant   ==
+== are relative contributions of TLB, L1/L2 cache misses and SDRAM      ==
+== accesses. For extremely large buffer sizes we are expecting to see   ==
+== page table walk with several requests to SDRAM for almost every      ==
+== memory access (though 64MiB is not nearly large enough to experience ==
+== this effect to its fullest).                                         ==
+==                                                                      ==
+== Note 1: All the numbers are representing extra time, which needs to  ==
+==         be added to L1 cache latency. The cycle timings for L1 cache ==
+==         latency can be usually found in the processor documentation. ==
+== Note 2: Dual random read means that we are simultaneously performing ==
+==         two independent memory accesses at a time. In the case if    ==
+==         the memory subsystem can&#39;t handle multiple outstanding       ==
+==         requests, dual random read has the same timings as two       ==
+==         single reads performed one after another.                    ==
+==========================================================================
+
+block size : single random read / dual random read
+      1024 :    0.0 ns          /     0.0 ns 
+      2048 :    0.0 ns          /     0.0 ns 
+      4096 :    0.0 ns          /     0.0 ns 
+      8192 :    0.0 ns          /     0.0 ns 
+     16384 :    0.0 ns          /     0.0 ns 
+     32768 :    0.1 ns          /     0.1 ns 
+     65536 :    5.9 ns          /    10.7 ns 
+    131072 :    9.4 ns          /    15.1 ns 
+    262144 :   11.4 ns          /    17.3 ns 
+    524288 :   18.9 ns          /    30.1 ns 
+   1048576 :  134.4 ns          /   203.4 ns 
+   2097152 :  196.0 ns          /   259.0 ns 
+   4194304 :  233.9 ns          /   284.3 ns 
+   8388608 :  253.6 ns          /   295.0 ns 
+  16777216 :  265.4 ns          /   300.4 ns 
+  33554432 :  273.7 ns          /   305.1 ns 
+  67108864 :  287.1 ns          /   325.3 ns 
+</code></pre></details>
+<h4 id="c2clat-results">c2clat results:</h4>
+<p>See: <a href="https://github.com/rigtorp/c2clat">rigtorp/c2clat</a>:</p>
+<p>Core-to-core memory latency across the CPU.</p>
+<p>[Add c2clat image here]</p>
+<h4 id="sbc-bench-results">sbc-bench results:</h4>
+<p>See: <a href="https://github.com/ThomasKaiser/sbc-bench">ThomasKaiser/sbc-bench</a>:</p>
+<details>
+<summary>Click to expand sbc-bench benchmark results</summary>
+</details>
+<pre tabindex="0"><code>TODO
+</code></pre><hr>
+<h3 id="phoronix-test-suite">Phoronix Test Suite</h3>
+<p>See: <a href="https://gist.github.com/geerlingguy/570e13f4f81a40a5395688667b1f79af">geerlingguy/sbc-general-benchmark.sh</a>:</p>
+<ul>
+<li>pts/encode-mp3: TODO sec</li>
+<li>pts/x264 1080p: TODO fps</li>
+<li>pts/x264 4K: TODO fps</li>
+<li>pts/phpbench: TODO</li>
+<li>pts/build-linux-kernel (defconfig): TODO sec</li>
+</ul>
+
+</content>
+
+
+
+<p>
+  
+  <a href="http://localhost:1313/blog/benchmarks/">#Benchmarks</a>
+  
+  <a href="http://localhost:1313/blog/sbc/">#SBC</a>
+  
+</p>
+
+  </main>
+  <footer>
+
+<footer style="text-align:center; margin-top:3rem; padding:2rem 0; color:gray; font-size:0.9rem;">
+
+  <div>
+    Made with ❤️ by Ryder Hutchings © 2026
+  </div>
+
+</footer>
+
+</footer>
+
+  
+</body>
+
+</html>
