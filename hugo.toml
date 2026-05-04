@@ -1,8 +1,10 @@
 # Base URL used when generating links to your pages
 # Set to the URL for your site
 baseURL = "https://ryderhutchings.com/"
+Full review and Pros & Cons: https://ryderhutchings.com/physical-app-blockers-tested-ranked/
 
-# The name of this wonderful theme ;-).
+googleAnalytics = "G-0270CWRVD8"
+
 theme = 'hugo-bearblog'
 
 # Basic metadata configuration for your blog.
